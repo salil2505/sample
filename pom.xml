@@ -60,12 +60,12 @@
     		<repository>
       			<id>deployment</id>
       			<name>Internal Releases</name>
-      			<url>http://3.14.12.47:8081/repository/sample-release/</url>
+      			<url>http://192.168.56.1:8084/repository/repositry-example/</url>
     		</repository>
 		<snapshotRepository>
       			<id>deployment</id>
       			<name>Internal Snapshot Releases</name>
-      			<url>http://3.14.12.47:8081/repository/sample-snapshots/</url>
+      			<url>http://192.168.56.1:8084/repository/sampl-repo-snapshot/</url>
     		</snapshotRepository>
        </distributionManagement>
 </project>
