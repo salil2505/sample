@@ -1,3 +1,22 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@salil2505 
+0
+0 0 salil2505/sample
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights  Settings
+sample/pom.xml
+@salil2505 salil2505 added dynamic version changes
+3de1780 2 hours ago
+@salil2505 @DEV3L
+67 lines (66 sloc)  1.95 KB
+    
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -39,8 +58,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
 				<configuration>
+					<manifest>
+                    	<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                	</manifest>
+                <archive>
+                    <manifestEntries>
+                        <Specification-Title>${project.name}</Specification-Title>
+                        <Specification-Version>${project.version}</Specification-Version>
+                        <Implementation-Version>${build.number}</Implementation-Version>
+                    </manifestEntries>
+                </archive>
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
@@ -64,3 +92,15 @@
     		</repository>
        </distributionManagement>
 </project>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
