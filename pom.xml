@@ -62,10 +62,5 @@
       			<name>Internal Releases</name>
       			<url>http://192.168.56.1:8084/repository/repositry-example/</url>
     		</repository>
-		<snapshotRepository>
-      			<id>deployment</id>
-      			<name>Internal Snapshot Releases</name>
-      			<url>http://192.168.56.1:8084/repository/sampl-repo-snapshot/</url>
-    		</snapshotRepository>
        </distributionManagement>
 </project>
