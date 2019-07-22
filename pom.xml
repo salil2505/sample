@@ -5,7 +5,7 @@
 	<groupId>Release1</groupId>
 	<artifactId>BC</artifactId>
 	<packaging>war</packaging>
-	<version>${v}</version>
+	<version>${BUILD_NUMBER}</version>
 	<name>mvn-hello-world Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
